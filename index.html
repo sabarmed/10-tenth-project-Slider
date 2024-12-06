@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Show</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="CSS/tabs.css">
+    <link rel="stylesheet" href="CSS/Validation.css">
+    <link rel="stylesheet" href="icoonmon/style.css">
+    <script defer src="javaScript/main.js"></script>
+    <script defer src="javaScript/taps.js"></script>
+    <script defer src="javaScript/Validation.js"></script>
+</head>
+<body id="body">
+    <header id="header">
+        <h1 id="websitetitle">
+            mohamed AB
+        </h1>
+        <nav>
+
+            <ul>
+
+                <li><a href="https://www.amazon.com/">all productes</a></li>
+                <li><a href="">about us</a></li>
+                <li id="dark" class="mode">dark mode</li>
+                <li><a href="/slider.html">Slider show</a></li>
+                <li id="changecolor"> change color
+                    <ul id="hiddenul" style="display: none;">
+                        <li id="headerBG"> header BG</li>
+                        <li id="titleBG"> title BG</li>
+                        <li id="titlecolor"> title color</li>
+                        <li id="sectionBG"> section BG</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+ <main id="main">
+
+    <section >
+        <h1>Validation Form</h1>
+<div style="text-align: center; margin-top: 50px;">
+    <button id="creatccount" style="opacity: 1;" class="my-btn">Create account</button>
+</div>
+
+       <div id="parentform" class="parent-form">
+        <form id="myform" action="action_page.php">
+            <div style="position: relative;" class="container">
+            
+                
+                    <h2 style="text-align: center;">Create account</h2>
+                    <div id="close">&#10006;</div>
+                    
+            
+
+            <div class="papa">
+                <label for="Username"><b>Username</b></label>
+                <input id="Username" type="text" placeholder="Ente Username" name="email"  required>
+                <div class="icon-check-circle"></div>
+                <p id="usermessage">at least 3 characters</p>
+            </div>
+          
+            <div class="papa">
+              <label for="email"><b>Email</b></label>
+              <input id="email" type="email" placeholder="Enter Email" name="email"  required>
+              <div class="icon-check-circle"></div>
+              <p id="emailmessage">please enter a correct email address</p>
+          </div>
+
+          <div class="papa">
+              <label for="psw"><b>Password</b></label>
+              <input id="psw"  type="password" placeholder="Enter Password" name="psw" required>
+              <div class="icon-check-circle"></div>
+              <p id="passwordmessage">pasword must be at least 8 characters withe 1 upper case and 1 number</p>
+          </div>
+
+          <div class="papa">
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input id="pswrepeat" type="password" placeholder="Repeat Password" name="psw-repeat"  required>
+              <div class="icon-check-circle"></div>
+              <p id="pswrepeat">please make sure your pasword match</p>
+              </div>
+              <hr>
+          
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              <button id="regbtn" disabled type="submit" class="registerbtn">Register</button>
+            </div>
+          
+            <div class="container signin">
+              <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+          </form>
+       </div>
+
+
+    </section>
+
+
+<section>
+<h1>Slider Show</h1>
+
+<div id="sliercontainer" class="slider-contaner">
+</div>
+    
+
+<div class="slider-button">
+    <button id="pre">  &lt;pre </button>
+    
+    <div class="button-numbers">
+                 <button class="active-num  my-slider-bttn">1</button>
+                 <button class="my-slider-bttn">2</button>
+                 <button class="my-slider-bttn">3</button>
+                 <button class="my-slider-bttn">4</button>
+                 <button class="my-slider-bttn">5</button>
+    
+    </div>
+    
+    <button id="next"> next &gt;</button>
+    
+    </div>
+
+</section>
+
+
+<section>
+    <h1>toggle t
+        Taps</h1>
+<div class="alltaps">
+
+    <button class="my-btn active-btn">finland</button>
+    <button class="my-btn">denmark</button>
+    <button class="my-btn">switzeland</button>
+</div>
+
+<div class="paren-article">
+    <article class="fun-facts active-article">
+        <h2>4 Fun Facts About Finland</h2>
+        <ol>
+            <li>finland is the world's happiest country</li>
+            <li>finns are the biggest world coffee drinkers</li>
+            <li>ther are 187,888 lakes in finland</li>
+            <li>most finnish children have two birthday parties</li>
+        </ol>
+    </article>
+    
+    <article class="fun-facts">
+        <h2>3 Fun Facts About Denimark</h2>
+        <ol>
+            <li>denimark is the second happiest country in the world</li>
+            <li>denimark has 444 islands</li>
+            <li>denimark has the oldest flag in the world </li>
+            
+        </ol>
+    </article>
+    
+    <article class="fun-facts">
+        <h2> 5 Fun Facts About switzeland</h2>
+        <ol>
+            <li>switzeland is the third happiest country i the world </li>
+            <li>they make and eat a lot of chocolate</li>
+            <li>switzeland has 7000 lakes</li>
+            <li>25% of the population is foreign</li>
+            <li>one of the most expensive place in the world</li>
+        </ol>
+    </article>
+</div>
+
+</section>
+
+ </main>
+   
+</body>
+</html>

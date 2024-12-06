@@ -1,0 +1,115 @@
+
+.alltaps{
+text-align: center;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+
+.my-btn{
+    all: unset;
+    margin: .5rem;
+    color: blueviolet;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(82, 135, 235);
+    padding: .375rem .75rem;
+    font-size: 20px;
+    line-height: 1,5;
+    border-radius: 5rem;
+    transition: all .5s;
+    opacity: 0.5;
+
+}
+.my-btn:hover{
+background-color: rgb(229, 58, 115);
+font-size: 1.2rem;
+color: white;
+opacity: 1;
+}
+
+.dark h1{
+    background-color: rgba(116, 212, 250, 0.817);
+}
+
+.dark .my-btn{
+    box-shadow: 0 0 10px #9e4673 , 0 0 10px #9e4673, 0 0 0px #9e4673;
+    border: 1px solid white;
+    color: white;
+}
+.dark .my-btn:hover{
+    background-color: #fc4364;
+    font-size: 1.2rem;
+    opacity: 1;
+}
+.active-btn{
+    background-color: rgb(71, 103, 197);
+    color: white;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.dark .active-btn{
+    background-color: #fc4364;
+    color: white;
+    font-weight: 600;
+}
+.fun-facts h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: royalblue;
+    font-size: 26px;
+}
+
+.dark .fun-facts  h2{
+    color: antiquewhite;
+}
+.dark .fun-facts ol{
+    color: antiquewhite;
+}
+.fun-facts ol{
+    width: fit-content;
+    margin: auto;
+    line-height: 40px;
+}
+
+ol li {
+    list-style: none;
+}
+ol {
+    counter-reset: plusone;
+}
+ol li::before {
+    counter-increment: plusone;
+    content: counter(plusone);
+    background-color: #fc4364;
+    padding: 0.1rem 0.45rem;
+    color: white;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px #9e4673 , 0 0 10px #9e4673, 0 0 0px #9e4673;
+}
+
+.active-article{
+    opacity: 1 !important;
+}
+.paren-article{
+    position: relative;
+    height: 290px;
+}
+@media (max-width:500px){
+    .paren-article{
+        position: relative;
+        height: 400px;
+    }
+}
+.fun-facts{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 1s;
+}
